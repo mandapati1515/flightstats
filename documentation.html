@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Prasanna’s Documentation of Data Visualization Design, Analysis, & Evaluation </title>
+		<link rel="stylesheet" href="css/styles.css"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+        <header>
+            <div class="header">
+              <h3>Documentation</h3>
+            </div>
+            <div>
+                <div style="margin-left: 1100px;">
+                    <a href="index.html"><button class="button">Home</button></a>
+                    <a href="video.html"><button class="button">video</button></a>
+                </div>
+            </div>
+        </header>
+		<br>
+		<div style="margin: 35px">
+			<h4>Team Members: Prasanna Kumar Mandapati, Sagar Varma Samanthapudi</h4>
+			<h4>Advisor: Dr. Khairi Rheda</h4>
+			<h4>Introduction:</h4>
+			<p>While brainstorming the ideas for the current business problems and landed up, Covid-19 pandemic has affected the airline sector immensely. To gain the business 
+				and grow back to its potential growth post the pandemic. It must tackle and decline its flight delay rate 
+				to gain the market capital. So, we have decided to Visualize the flights, delay data interactively which 
+				includes delay timelines for each flight among the cities in USA by the major airlines.  </p>
+			<h4>Dataset:</h4>
+                <p> We are extracted the data from https://www.kaggle.com/datasets/flight-delay-and-causes-2019 which contains DayOfWeek - (Monday-Sunday),Date → Scheduled dateDepTime → Actual departure time (local, hhmm),ArrTime → Actual arrival time (local, hhmm),CRSArrTime → Scheduled arrival time (local, hhmm),UniqueCarrier → Unique carrier code,Airline → Airline company,FlightNum → flight number,TailNum → plane tail number,ActualElapsedTime → Actual time an airplane spends in the air(in minutes) with TaxiIn/Out,CRSElapsedTime → CRS Elapsed Time of Flight (estimated elapse time) in minutes,AirTime → Flight Time (in minutes),ArrDelay → Difference in minutes between scheduled and actual arrival time,Origin → Origin IATA(International Air Transport Association) airport code,Org_Airport → Origin Airport Name,Dest → Destination IATA code,Dest_Airport → Destination Airport Name,Distance → Distance between airports (miles),TaxiIn → Wheels down and arrival at the destination airport gate, in minutes,TaxiOut → The time elapsed between departure from the origin airport gate and wheels off, in minutes,Cancelled → Was the flight canceled?,CancellationCode → Reason for cancellation,Diverted → 1 = yes, 0 = no,CarrierDelay → Flight delay due to carrier(e.g. maintenance or crew problems, aircraft cleaning, fueling, etc), 0 = No, yes = (in minutes),WeatherDelay → Flight delay due to weather, 0 = No, yes = (in minutes),NASDelay → Flight delay by NSA(National Aviation System), 0 = No, yes = (in minutes),SecurityDelay → Flight delay by this reason, 0 = No, yes = (in minutes),LateAircraftDelay → Flight delay by this reason, 0 = No, yes = (in minutes)</p>
+				<p>Number of rows: 484552
+					Of all these available columns, we used the most important features that contribute most to the delay of flight insights like Departure Time, Arrival Time, Origin Airport, Destination Airport, Delay Count, Total Number of Delays, DaysofWeek, Month.</p>
+			<h4>Approach:</h4>
+				<p>AIMS approach to break the problem statement and define data</p>
+			<h4>Exploratory Data Analysis:</h4>
+				<p>Initially we explored the dataset by performing exploratory data analysis in python and understood the distribution of the dataset by plotting few bar plots and pie charts.
+				Later on, some data cleaning in removal of outliers and removal of null values and replacing it with most occuring value.</p>
+			<h4>Dashboard Design:</h4>
+				<p>As the data set is very immense, we had done some initial analysis and listed out the use cases that our visualizations should be providing deep insights with an automated dashboard providing quick and latest sales insights inorder to support data driven decision making.</p>
+			<h4>Initial Ideas:</h4>
+			<img src="image.jpeg" alt="Fig: Designfig1" style="width: 500px;height: 450px;">
+			<h4> Framework & Tools:</h4>
+				<li style="margin-left: ;">Microsoft Power BI</li>
+				<li>HTML</li>
+				<li>CSS</li>
+			<h4>Output:</h4>
+					<p>Below are the developed visualizations that answered several questions related to major reasons for the delay in flights.</p>
+			<h4>References:</h4>
+			<div style="margin-left: 30px">
+				<ul>
+					<li><a href="https://www.w3schools.com/graphics/svg_intro.asp">https://www.w3schools.com/graphics/svg_intro.asp</a></li>
+					<li><a href="https://www.w3schools.com/w3js/">https://www.w3schools.com/w3js/</a></li>
+					<li><a href="https://www.w3schools.com/w3css/">https://www.w3schools.com/w3css/</a></li>
+					<li><a href="https://www.toptal.com/designers/colorfilter">https://www.toptal.com/designers/colorfilter</a></li>
+					<li><a href="https://codepen.io/rstrahl/pen/yyEYBx.">https://codepen.io/rstrahl/pen/yyEYBx.</a></li>
+					<li><a href="https://www.udemy.com/data-visualize-data-with-d3js-the-easy-way/learn/v4/overview">https://www.udemy.com/data-visualize-data-with-d3js-the-easy-way/learn/v4/overview</a></li>
+					<li><a href="https://webdva.github.io/how-to-draw-a-line-in-d3js">https://webdva.github.io/how-to-draw-a-line-in-d3js</a></li>
+					<li><a href="https://d3js.org">https://d3js.org</a></li>
+					<li><a href="https://www.d3-graph-gallery.com">https://www.d3-graph-gallery.com</a></li>
+					<li><a href="https://gist.github.com/bryanhanson/11344247">https://gist.github.com/bryanhanson/11344247</a></li>
+				</ul>
+			</div>	
+		</div>
+	</body>
+</html>
